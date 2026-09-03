@@ -56,7 +56,7 @@ app.use('/api', (req, res, next) => {
 
 app.use('/api', formRoutes)
 
-const server = app.listen(port, host, () => {
+const server = app.listen(port,"0.0.0.0", () => {
   console.log(`Server running at http://${host}:${port}`)
 })
 
